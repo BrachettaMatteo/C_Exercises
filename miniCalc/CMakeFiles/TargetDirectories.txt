@@ -1,0 +1,3 @@
+/Users/matteobrachetta/Sviluppo/CLion/C_Exercises/miniCalc/CMakeFiles/miniCalc.dir
+/Users/matteobrachetta/Sviluppo/CLion/C_Exercises/miniCalc/CMakeFiles/edit_cache.dir
+/Users/matteobrachetta/Sviluppo/CLion/C_Exercises/miniCalc/CMakeFiles/rebuild_cache.dir
