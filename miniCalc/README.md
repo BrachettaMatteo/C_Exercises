@@ -34,10 +34,10 @@ Implementare le seguenti funzioni, senza preoccuparsi di gestire la fine del fil
 salta tutti i caratteri di spaziatura consecutivi presenti nell’attuale buffer di input.
 Il primo carattere letto dopo una chiamata a saltaspazi non deve essere un carattere di spaziatura.
 - `char leggispazio(void)`:
-Legge un carattere e restituisce 1 se il carattere letto `è di spaziatura, altrimenti restituisce 0.
+Legge un carattere e restituisce 1 se il carattere letto è di spaziatura, altrimenti restituisce 0.
  char leggiparola(char *word):
 Restituisce 0 se il il prossimo carattere nel buffer di input non è alfanumerico. Altrimenti, legge la sequenza di caratteri alfanumerici consecutivi presenti nell’attuale buffer di input e la memorizza nella stringa word (non dimenticate di gestire il carattere di terminazione!). Alla fine restituisce 1. Il primo carattere letto dopo una chiamata a leggiparola non deve essere un carattere alfanumeri- co.
-Nota: ovviamente word definita nell’ambiente chiamante `è un array di char di una certa lunghez- za SIZEWORD (diciamo #define SIZEWORD 80). Per questo esercizio assumiamo che ogni parola letta in input non sia piu` lunga di SIZEWORD.
+Nota: ovviamente word definita nell’ambiente chiamante è un array di char di una certa lunghez- za SIZEWORD (diciamo #define SIZEWORD 80). Per questo esercizio assumiamo che ogni parola letta in input non sia piu` lunga di SIZEWORD.
 - `int legginumero nonnegativo(void)`:
 Restituisce -1 se il il prossimo carattere nel buffer di input non è una cifra.
 Altrimenti legge la sequenza di cifre consecutive presenti nell’attuale buffer di input, calcola il valore intero corrispondente, e lo restituisce.
