@@ -8,8 +8,14 @@
  * @copyright Copyright (c) 2022
  */
 
+#include <stdio.h>
+
+#include <ctype.h>
+
+#define SIZEWORD 80
 /**
- * @brief salta tutti i caratteri di spaziatura consecutivi presenti nell'attuale buffer di input. Il primo carattere letto dopo una chiamata a saltaspazi non deve essere un carattere di spaziatura
+ * @brief salta tutti i caratteri di spaziatura consecutivi presenti nell'attuale buffer di input.
+ *  Il primo carattere letto dopo una chiamata a saltaspazi non deve essere un carattere di spaziatura
  * 
  */
 void saltaspazi(void);
@@ -18,7 +24,7 @@ void saltaspazi(void);
  * 
  * @return char restituisce 1 se il carattere letto è di spaziatura, altrimetni restituisce 0.
  */
-char leggispazi(void);
+char leggispazio(void);
 /**
  * @brief 
  * 
@@ -35,7 +41,7 @@ Altrimenti legge la sequenza di cifre consecutive presenti nell’attuale buffer
 intero corrispondente, e lo restituisce.
 Il primo carattere letto dopo una chiamata a legginumero nonnegativo non deve essere una cifra
  */
-int legginumero_nonnegativa(void);
+int legginumero_nonnegativo(void);
 /**
  * @brief 
  * 

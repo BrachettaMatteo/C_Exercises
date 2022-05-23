@@ -8,19 +8,29 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include <stdio.h>
 #include "miniCalc.h"
-
-#define SIZEWORD 80
 
 void saltaspazi(void)
 {
-    //TODO: implement
+    int c;
+    c = getchar();
+    //elimino tutti i caratteri di spaziatura
+    while (isspace(c) > 0)
+    {
+        printf("%d", c);
+        //prendo un'altro carattere
+        c = getchar();
+    };
+    //aggiungo l'ultimo carattere eliminato
+    ungetc(c, stdin);
 }
 
-char leggispazi(void)
+char leggispazio(void)
 {
-    //TODO: implement
+    int c = getchar();
+  if(isspace(c))
+return '1';
+else '0';
 }
 
 char leggiparola(char *word)
@@ -30,12 +40,43 @@ char leggiparola(char *word)
 
 int legginumero_nonnegativo(void)
 {
-    //TODO: implement
+    int output;
+    int c;
+    c = getchar();
+    //cintrollo elemento
+    if (isdigit(c) < 0)
+    {
+        //finche sono ci sono cifre
+        while (isdigit(c) > 0)
+        {
+            output+=c;
+            c=getchar();
+        }
+        //aggiungo ultimo 
+        ungetc(c,stdin);
+        return output;
+    }
+    else{
+        //riaggiungo elemento
+        ungetc(c,stdin);
+        return -1;}
+
 }
 
 char leggi_si_no(char *msg)
 {
-    //TODO: implement
+    char choice = '\0';
+    printf("%s s/n", msg);
+    scanf("%c", &choice);
+    while (choice != 's' & choice != 'n')
+    {
+        printf("imput non corretto digitare s/n");
+        scanf("%c", &choice);
+    }
+    if (choice == 's')
+        return '1';
+    else
+        return '0';
 }
 
 int main(void)
