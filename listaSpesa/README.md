@@ -1,2 +1,10 @@
 # Lista della Spesa
- Creare una applicazione che permette di creare un file contenente la lista della spesa.
+Premette di creare o visualizzare una lista della spesa.
+## run project
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+./listaSpesa
+```
