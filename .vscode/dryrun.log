@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/muser/Desktop/LabSO/C_Exercises'
+make: Leaving directory '/home/muser/Desktop/LabSO/C_Exercises'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

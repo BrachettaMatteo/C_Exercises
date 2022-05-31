@@ -1,0 +1,3 @@
+/home/muser/Desktop/LabSO/C_Exercises/SystemCall/build/CMakeFiles/rebuild_cache.dir
+/home/muser/Desktop/LabSO/C_Exercises/SystemCall/build/CMakeFiles/edit_cache.dir
+/home/muser/Desktop/LabSO/C_Exercises/SystemCall/build/CMakeFiles/SC.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/SC.dir/main.c.o  -o SC 
